@@ -11,39 +11,56 @@
   <title>AI Haiku Generator</title>
 </head>
 
-<body>
-  <header class="text-slate-800 ps-2 py-1">
-    <h1 class="text-3xl"><i class="fa-duotone fa-pen-fancy text-[1.5rem]"></i> h<span
-        class="underline underline-offset-4">ai</span>ku
+<body class="bg-blue-100/25 dark:bg-slate-900 dark:text-slate-300">
+
+  <header class="ps-2 py-1">
+    <h1 class="text-xl md:text-2xl"><a href="/" title="Home"><i
+          class="fa-duotone fa-pen-fancy text-[1rem] text-blue-600 dark:text-blue-800"></i></a>
+      h<span class="underline underline-offset-4 text-">ai</span>ku
       generator</h1>
   </header>
-  <main class="containers text-slate-800">
-    <div class="bg-slate-100 shadow-md h-[100px] flex justify-center items-center px-3 py-6 mx-8 mb-8 rounded-md">
+
+  <main class="text-slate-800 w-full px-3 sm:px-12 md:px-24 lg:px-60 xl:px-[25%]">
+    <h2
+      class="text-slate-800 dark:text-slate-300 text-xl md:text-3xl lg:text-4xl text-center font-semibold my-4 md:mt-6 lg:my-8">
+      AI Haiku
+      Poem
+      Generator
+    </h2>
+    <div
+      class="bg-white dark:bg-slate-800 dark:text-slate-300 shadow-md flex justify-center items-center px-4 sm:px-16 py-4 mx-4 sm:mx-8 mb-3 sm:mb-4 lg:mb-6 rounded-md">
       <form action="" class="w-full flex justify-evenly">
-        <input type="text" placeholder="Enter the topic of the haiku..." autofocus required autocomplete="off"
-          class="w-2/3 me-2 py-2 px-5 rounded-md" />
-        <input type="submit"
-          class="rounded-md py-2 px-5 bg-slate-800 text-white hover:bg-slate-700 hover:cursor-pointer" />
+        <input type="text" placeholder="Enter your haiku topic..." autofocus requiblue autocomplete="off"
+          class="w-full dark:bg-slate-700 dark:text-white dark:placeholder:text-slate-100 me-4 py-2 sm:py-3 px-4 sm:px-8 lg:px-5 rounded-3xl text-xs lg:text-base focus:outline-blue-600 dark:focus:outline-none border-2 border-blue-600 dark:border-none" />
+        <input type="submit" title="Generate Haiku"
+          class="rounded-3xl px-6 md:px-7 lg:px-10 bg-blue-600 dark:bg-blue-800 text-white hover:bg-blue-700 hover:cursor-pointer text-xs lg:text-base" />
       </form>
     </div>
-    <div class="bg-slate-100 text-slate-700 shadow-md h-[200px] content-center px-6 py-6 mx-8 mb-8 rounded-md">
-      <p class="flex justify-center text-2xl">
+    <div class="bg-white text-slate-800 dark:bg-slate-800 dark:text-slate-300 border-l-8 border-l-blue-600 dark:border-l-blue-800 
+      border-e-0 shadow-md content-center px-4 sm:px-16 py-6 mx-4 sm:mx-8 mb-8 rounded-s-sm rounded-e-md">
+      <p class="flex justify-start text-xs/5 lg:text-base/8 ">
         The light
         of a
         candle<br />
-        Is transferred to another candle — <br />
+        Is transferblue to another candle — <br />
         spring twilight.
       </p>
     </div>
   </main>
-  <footer class="text-sm text-center text-slate-800 content-end pb-8">This project was coded by
-    <a href="https://github.com/emceekoenig" target="_blank" class="text-blue-600">Chelsea
+
+  <footer class="text-xs sm:text-sm text-center text-slate-800 dark:text-slate-300 content-end pb-4 sm:pb-8 px-6">This
+    project was
+    coded by
+    <a href="https://github.com/emceekoenig" target="_blank" class="text-blue-600 dark:text-blue-800">Chelsea
       Koenig</a>,
     is
     open-sourced on
-    <a href="https://github.com/emceekoenig/ai-poem-generator" target="_blank" class="text-blue-600">GitHub</a>
-    and hosted on <a href="https://haiku-poem-generator.netlify.app/" target="_blank" class="text-blue-600">Netlify</a>.
+    <a href="https://github.com/emceekoenig/ai-poem-generator" target="_blank"
+      class="text-blue-600 dark:text-blue-800">GitHub</a>
+    and hosted on <a href="https://haiku-poem-generator.netlify.app/" target="_blank"
+      class="text-blue-600 dark:text-blue-800">Netlify</a>.
   </footer>
+
   <script src="src/index.js"></script>
 </body>
 

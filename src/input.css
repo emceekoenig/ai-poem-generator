@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(208, 225, 239);
+  /* background-color: rgb(208, 225, 239); */
   display: grid;
   grid-template-areas:
     "header"
@@ -19,6 +19,7 @@ header {
 
 main {
   grid-area: main;
+  justify-self: center;
 }
 
 footer {
