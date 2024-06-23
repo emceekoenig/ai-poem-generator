@@ -13,7 +13,7 @@
   <title>AI Haiku Generator</title>
 </head>
 
-<body class="bg-blue-100/25 dark:bg-slate-900 dark:text-slate-300">
+<body class="bg-blue-100/25 dark:bg-slate-900 dark:text-slate-400">
 
   <header class="ps-2 py-1">
     <h1 class="text-xl md:text-2xl"><a href="/" title="Home"><i
@@ -24,29 +24,34 @@
 
   <main class="text-slate-800 w-full px-3 sm:px-12 md:px-24 lg:px-60 xl:px-[25%]">
     <h2
-      class="text-slate-800 dark:text-slate-300 text-xl md:text-3xl lg:text-4xl text-center font-semibold my-4 md:mt-6 lg:my-8">
+      class="text-slate-800 dark:text-slate-400 text-xl md:text-3xl lg:text-4xl text-center font-semibold my-4 md:mt-6 lg:my-8">
       AI Haiku
       Poem
       Generator
     </h2>
     <div
-      class="bg-white dark:bg-slate-800 dark:text-slate-300 shadow-md flex justify-center items-center px-4 sm:px-16 py-4 mx-4 sm:mx-8 mb-3 sm:mb-4 lg:mb-6 rounded-md">
-      <form id="poem-generator-form" class="w-full flex justify-evenly">
-        <input id="user-instructions" type="text" placeholder="Enter your haiku topic..." autofocus requiblue
-          autocomplete="off"
-          class="w-full dark:bg-slate-700 dark:text-white dark:placeholder:text-slate-100 me-4 py-2 sm:py-3 px-4 sm:px-8 lg:px-5 rounded-3xl text-xs lg:text-base focus:outline-blue-600 dark:focus:outline-none border-2 border-blue-600 dark:border-none" />
-        <input type="submit" title="Generate Haiku"
-          class="rounded-3xl px-6 md:px-7 lg:px-10 bg-blue-600 dark:bg-blue-800 text-white hover:bg-blue-700 hover:cursor-pointer text-xs lg:text-base" />
-      </form>
+      class="form-wrapper bg-white dark:bg-slate-800 dark:text-slate-300 shadow-md px-4 sm:px-16 pt-3 pb-1 mx-4 sm:mx-8 mb-3 sm:mb-4 lg:mb-6 rounded-md">
+      <div class="flex justify-center items-center">
+        <form id="poem-generator-form" class="w-full flex justify-evenly">
+          <input id="user-instructions" type="text" placeholder="Enter your haiku topic..." autofocus requiblue
+            autocomplete="off"
+            class="w-full dark:bg-slate-700 dark:text-white dark:placeholder:text-slate-300 me-4 py-2 sm:py-3 px-4 rounded-3xl text-xs lg:text-base focus:outline-blue-600 dark:focus:outline-none border-2 border-blue-600 dark:border-none" />
+          <input id="generate-button" type="submit" title="Generate Haiku"
+            class="rounded-3xl px-6 md:px-7 lg:px-10 bg-blue-600 dark:bg-blue-800 text-white hover:bg-blue-700 hover:cursor-pointer text-xs lg:text-base" />
+        </form>
+      </div>
+      <small class="text-[10px] italic text-slate-700 dark:text-slate-400 px-4 lg:px-16">i.e. Tacos, Nintendo,
+        Cat</small>
     </div>
-    <div class="bg-white text-slate-800 dark:bg-slate-800 dark:text-slate-300 border-l-2 border-l-blue-600 dark:border-l-blue-800 
-      border-e-0 shadow-md content-center px-4 sm:px-16 py-6 mx-4 sm:mx-8 mb-8 rounded-s-sm rounded-e-md">
-      <p id="poem" class="flex justify-start text-xs/5 lg:text-base/8">
-      </p>
-    </div>
+
+    <p id="poem"
+      class="bg-white text-slate-800 dark:bg-slate-800 dark:text-slate-400 border-l-2 border-l-blue-600 dark:border-l-blue-800 
+      border-e-0 shadow-md content-center px-6 sm:px-16 py-6 mx-4 sm:mx-8 my-2 rounded-s-sm rounded-e-md justify-start text-xs/5 lg:text-base/8 hidden animate-pulse">
+    </p>
+
   </main>
 
-  <footer class="text-xs sm:text-sm text-center text-slate-800 dark:text-slate-300 content-end pb-4 sm:pb-8 px-6">This
+  <footer class="text-xs text-center text-slate-800 dark:text-slate-400 content-end pb-4 sm:pb-8 px-6">This
     project was
     coded by
     <a href="https://github.com/emceekoenig" target="_blank" class="text-blue-600 dark:text-blue-800">Chelsea
