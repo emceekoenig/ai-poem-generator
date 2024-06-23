@@ -22,6 +22,11 @@ main {
   justify-self: center;
 }
 
+#poem strong {
+  color: rgb(124, 99, 149);
+  font-size: 10px;
+}
+
 footer {
   grid-area: footer;
 }
