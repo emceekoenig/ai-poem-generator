@@ -32,7 +32,7 @@ function generatePoem(event) {
 
   setTimeout(() => {
     axios.get(apiUrl).then(displayPoem);
-  }, 3000);
+  }, 2200);
 }
 
 let formElement = document.querySelector("#poem-generator-form");

@@ -20,6 +20,10 @@ header {
 main {
   grid-area: main;
   justify-self: center;
+
+  *:required {
+    background-color: #f5f9fe;
+  }
 }
 
 #poem p {
