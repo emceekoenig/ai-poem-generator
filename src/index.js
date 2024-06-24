@@ -9,6 +9,9 @@ function displayPoem(response) {
     cursor: "",
     delay: 50,
   });
+
+  poemElement.classList.remove("py-6");
+  poemElement.classList.add("pt-6");
 }
 
 function generatePoem(event) {
