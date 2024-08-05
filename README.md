@@ -30,13 +30,13 @@ To set up the AI Haiku Poem Generator locally, follow these steps:
 
 1. Clone the repository:
 
-   ```
-   git clone https://github.com/your-username/ai-haiku-poem-generator.git
+   ```bash
+   git clone https://github.com/emceekoenig/ai-poem-generator
    ```
 
 2. Navigate to the project directory:
 
-   ```
+   ```bash
    cd ai-haiku-poem-generator
    ```
 
